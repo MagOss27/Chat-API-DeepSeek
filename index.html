@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>ChatGPT - Interface Clone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Barra Lateral (Sidebar) -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn">+ Nova conversa</button>
+      </div>
+      <nav class="sidebar-nav">
+      </nav>
+      <div class="sidebar-footer label-embaixo">
+        <span>Feito com PrimeOss</span>
+      </div>
+    </aside>
+
+    <!-- Área Principal -->
+    <main class="main">
+      <div class="chat-container" id="chat-box">
+        <!-- Exemplo de mensagem do bot ao iniciar -->
+        <div class="message bot">
+          <div class="avatar">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" alt="Bot">
+          </div>
+          <div class="content">
+            <p>Olá, como posso ajudar?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Campo de entrada e envio de mensagens -->
+      <form class="chat-input" id="chat-form">
+        <input type="text" id="user-input" placeholder="Envie uma mensagem para o PrimeOss" autocomplete="off" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
